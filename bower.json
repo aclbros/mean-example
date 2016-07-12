@@ -1,0 +1,22 @@
+{
+  "name": "multivision",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "aclbros12@yahoo.es"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "toastr": "^2.1.2",
+    "angular": "^1.5.7",
+    "angular-resource": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "bootstrap": "^3.3.6"
+  },
+  "resolutions": {
+    "jquery": "^3.1.0"
+  }
+}
