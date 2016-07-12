@@ -3,6 +3,7 @@ var express = require("express"),
     bodyParser = require("body-parser"),
     logger = require("morgan"),
     mongoose = require("mongoose");
+require("dotenv").load();
 
 var env = process.env.NODE_ENV = process.env.NODE_ENV || "development";
 
@@ -25,7 +26,7 @@ app.use(stylus.middleware(
 ));
 app.use(express.static(__dirname + '/public'));
 
-mongoose.connect('mongodb://user1:user1@ds017205.mlab.com:17205/mean-example');
+mongoose.connect(process.env.MONGODB_URI);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
 db.on('open', function callback() {
